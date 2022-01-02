@@ -45,7 +45,7 @@ services:
             - Taegeuk7Jang-Mureupchigi2.env
     taegeuk7-Hecheomakgi1:
         <<: *default-app
-        env_file:`
+        env_file:
             - Taegeuk7Jang-Hecheomakgi1.env
     taegeuk7-DujumeokJeocheoJireugi1:
         <<: *default-app
@@ -94,4 +94,4 @@ services:
     jr-red-nunchuck:
         <<: *default-app
         env_file:
-        - JuniorRedNunchuck.env
+        - JuniorRedNunchuckas.env
