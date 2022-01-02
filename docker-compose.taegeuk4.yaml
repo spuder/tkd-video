@@ -1,0 +1,25 @@
+version: "3.9"
+
+x-app: &default-app
+    image: gifr
+    volumes:
+        - ./input:/input
+        - ./output:/output
+
+services:
+    taegeuk4-parts:
+        <<: *default-app
+        env_file:
+            - Taegeuk4Jang-Parts.env
+    taegeuk4-complete:
+        <<: *default-app
+        env_file:
+            - Taegeuk4Jang-complete.env
+    sr-blue-form-complete:
+        <<: *default-app
+        env_file:
+        - SeniorBlueForm-complete.env
+    sr-blue-sparring:
+        <<: *default-app
+        env_file:
+        - SeniorBlueSparring.env

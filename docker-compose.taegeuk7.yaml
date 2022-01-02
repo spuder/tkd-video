@@ -1,0 +1,97 @@
+version: "3.9"
+
+x-app: &default-app
+    image: gifr
+    volumes:
+        - ./input:/input
+        - ./output:/output
+
+services:
+    taegeuk7-complete:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-complete.env
+    taegeuk7-parts:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-parts.env
+    taegeuk7-SonalGeodeureoArae:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-SonalGeodeureoArae.env
+    taegeuk7-GeodeureoBatangson1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-GeodeureoBatangson1.env
+    taegeuk7-GeodeureoBatangson2:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-GeodeureoBatangson2.env
+    taegeuk7-Bojumeok1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Bojumeok1.env
+    taegeuk7-Gawimakgi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Gawimakgi1.env
+    taegeuk7-Mureupchigi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Mureupchigi1.env
+    taegeuk7-Mureupchigi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Mureupchigi2.env
+    taegeuk7-Hecheomakgi1:
+        <<: *default-app
+        env_file:`
+            - Taegeuk7Jang-Hecheomakgi1.env
+    taegeuk7-DujumeokJeocheoJireugi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-DujumeokJeocheoJireugi1.env
+    taegeuk7-DujumeokJeocheoJireugi2:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-DujumeokJeocheoJireugi2.env
+    taegeuk7-UtgeoreoArae1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-UtgeoreoArae1.env
+    taegeuk7-DeungjumeokBakkanchigi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-DeungjumeokBakkanchigi1.env
+    taegeuk7-Pyojeokchagi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Pyojeokchagi1.env
+    taegeuk7-Pyojeokchagi2:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Pyojeokchagi2.env
+    taegeuk7-Yeopjieugi1:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Yeopjieugi1.env
+    taegeuk7-Yeopjieugi2:
+        <<: *default-app
+        env_file:
+            - Taegeuk7Jang-Yeopjieugi2.env
+    jr-red-form-complete:
+        <<: *default-app
+        env_file:
+        - JuniorRedForm-complete.env
+    jr-red-sparring:
+        <<: *default-app
+        env_file:
+        - JuniorRedSparring.env
+    jr-red-kicking:
+        <<: *default-app
+        env_file:
+        - JuniorRedKicking.env
+    jr-red-nunchuck:
+        <<: *default-app
+        env_file:
+        - JuniorRedNunchuck.env

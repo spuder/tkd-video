@@ -1,0 +1,161 @@
+# TKD Videos
+
+Taekwondo Videos
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1599px-Flag_of_South_Korea.svg.png)
+
+Images are generated with [spuder/gifr:latest](https://github.com/spuder/gifr)
+
+
+Videos are hosted in this notion page / gifcat
+
+https://www.notion.so/d9c0017ffc374ce09bdc8f55e25d30a5?v=75c81de4d5c848949af089063419b910
+
+## Readme.md updates
+
+A makefile is included to generate this readme. See `templates/README.md.erb` for the template
+
+```
+make templates
+````
+
+# Junior Green
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/JuniorGreen*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+# Senior Green
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/SeniorGreen*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+# Junior Blue
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/JuniorBlue*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+# Senior Blue
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/SeniorBlue*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+# Junior Brown
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/JuniorBrown*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+# Senior Brown
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/SeniorBrown*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+
+# Junior Red
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/JuniorRed*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+# Senior Red
+
+| Filename | Preview | 
+|---|---|
+<% Dir["output/SeniorRed*.gif"].each do |gif| -%>
+| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% end -%>
+
+
+
+
+## Usage
+
+A `Makefile` is included to simplify making videos
+
+``
+make all -j4
+```
+
+Or to make a single video
+
+```
+make 3 # This will create taegeuk3 videos
+```
+
+
+
+Docker Compose (Alternative)
+
+```
+docker compose -f docker-compose.taegeuk1.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk2.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk3.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk4.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk5.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk6.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk7.yaml up --remove-orphans
+docker compose -f docker-compose.taegeuk8.yaml up --remove-orphans
+```
+
+Bash (Not Recomended)
+
+```
+for filename in *.env; do
+    echo $filename
+    unset RESOLUTION
+    unset FPS
+    unset VIDEO_URL
+    source $filename
+    docker run \
+      -v $(pwd)/input:/input \
+      -v $(pwd)/output:/output \
+      -e VIDEO_URL \
+      -e SPLITS \
+      -e INPUT_FILE \
+      -e OUTPUT_FILE \
+      -e RESOLUTION \
+      -e FPS \
+      gifr
+done
+```
+
+Generating lower resolution 480p / 8fps
+
+```
+for filename in *.env; do
+    echo $filename
+    unset VIDEO_URL
+    source $filename
+    export RESOLUTION=640
+    export FPS=10
+    docker run \
+      -v $(pwd)/input:/input \
+      -v $(pwd)/output:/output \
+      -e VIDEO_URL \
+      -e SPLITS \
+      -e INPUT_FILE \
+      -e OUTPUT_FILE \
+      -e RESOLUTION \
+      -e FPS \
+      gifr
+done
+```

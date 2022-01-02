@@ -1,0 +1,7 @@
+version: "3.9"
+
+x-app: &default-app
+    image: gifr
+    volumes:
+        - ./input:/input
+        - ./output:/output
