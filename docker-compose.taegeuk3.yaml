@@ -1,7 +1,7 @@
 version: "3.9"
 
 x-app: &default-app
-    image: gifr
+    image: spuder/gifr:latest
     volumes:
         - ./input:/input
         - ./output:/output
