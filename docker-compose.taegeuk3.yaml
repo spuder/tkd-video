@@ -10,11 +10,11 @@ services:
     taegeuk3-parts:
         <<: *default-app
         env_file:
-            - Taegeuk3Jang-Parts.env
+            - jr-blue/Taegeuk3Jang-Parts.env
     taegeuk3-complete:
         <<: *default-app
         env_file:
-            - Taegeuk3Jang-complete.env
+            - jr-blue/Taegeuk3Jang-complete.env
     # jr-blue-form-complete:
     #     <<: *default-app
     #     env_file:
@@ -22,8 +22,8 @@ services:
     jr-blue-sparring:
         <<: *default-app
         env_file:
-        - JuniorBlueSparring.env
+        - jr-blue/JuniorBlueSparring.env
     jr-blue-kicking:
         <<: *default-app
         env_file:
-        - JuniorBlueKicking.env
+        - jr-blue/JuniorBlueKicking.env
