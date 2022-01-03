@@ -11,10 +11,10 @@ services:
         <<: *default-app
         env_file:
             - sr-red/Taegeuk8Jang-complete.env
-    # taegeuk7-parts:
-    #     <<: *default-app
-    #     env_file:
-    #         - sr-red/Taegeuk7Jang-parts.env
+    taegeuk8-parts:
+        <<: *default-app
+        env_file:
+            - sr-red/Taegeuk8Jang-parts.env
     sr-red-form-complete:
         <<: *default-app
         env_file:
