@@ -40,12 +40,12 @@ make templates
 
 | Filename | Preview | 
 |---|---|
-| SeniorBlueSparring-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FlpvDQo3px8VUxyxXaq%2Fgiphy.gif)| 
-| SeniorBlueSparring-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FNz3ey0rOcuzp5wUnpu%2Fgiphy.gif)| 
-| SeniorBlueKicking-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FzXcF6l14fnJog5D0OP%2Fgiphy.gif)| 
-| SeniorBlueKicking-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FPuruVzNyKySFAjciou%2Fgiphy.gif)| 
-| SeniorBlueForm-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FIVMLroW0Ct5F27aTVP%2Fgiphy-downsized-large.gif)| 
-| Taegeuk4Jang-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FoBm3s8K0doYjSWOVC2%2Fgiphy.gif)| 
+| SeniorBlueSparring-part1-640.gif | ![](https://media.giphy.com/media/lpvDQo3px8VUxyxXaq/giphy.gif)| 
+| SeniorBlueSparring-part2-640.gif | ![](https://media.giphy.com/media/Nz3ey0rOcuzp5wUnpu/giphy.gif)| 
+| SeniorBlueKicking-part2-640.gif | ![](https://media.giphy.com/media/zXcF6l14fnJog5D0OP/giphy.gif)| 
+| SeniorBlueKicking-part1-640.gif | ![](https://media.giphy.com/media/PuruVzNyKySFAjciou/giphy.gif)| 
+| SeniorBlueForm-complete-640.gif | ![](https://media.giphy.com/media/IVMLroW0Ct5F27aTVP/giphy-downsized-large.gif)| 
+| Taegeuk4Jang-complete-640.gif | ![](https://media.giphy.com/media/oBm3s8K0doYjSWOVC2/giphy.gif)| 
 
 # Junior Brown
 
