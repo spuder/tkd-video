@@ -55,7 +55,7 @@ make templates
 | JuniorBrownSparring-part1-640.gif | ![](https://media.giphy.com/media/aor2iyIkfZAq3sCp36/giphy.gif)| 
 | JuniorBrownKicking-part2-640.gif | ![](https://media.giphy.com/media/I9vKoToiXGpLa4gtUV/giphy.gif)| 
 
-# Senior Brown
+# :brown_square: Senior Brown
 
 | Filename | Preview | 
 |---|---|
