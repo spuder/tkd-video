@@ -19,10 +19,10 @@ services:
         <<: *default-app
         env_file:
         - sr-red/SeniorRedForm-complete.env
-    # sr-red-sparring:
-    #     <<: *default-app
-    #     env_file:
-    #     - sr-red/SeniorRedSparring.env
+    sr-red-sparring:
+        <<: *default-app
+        env_file:
+        - sr-red/SeniorRedSparring.env
     sr-red-kicking:
         <<: *default-app
         env_file:
