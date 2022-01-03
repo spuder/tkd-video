@@ -29,7 +29,7 @@ make templates
 | Filename | Preview | 
 |---|---|
 
-# :blue_circle: Junior Blue :blue_circle:
+# :large_blue_circle: Junior Blue :large_blue_circle:
 
 | Filename | Preview | 
 |---|---|
