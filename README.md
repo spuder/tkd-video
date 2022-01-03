@@ -19,24 +19,24 @@ A makefile is included to generate this readme. See `templates/README.md.erb` fo
 make templates
 ````
 
-# Junior Green
+# :green_circle: Junior Green :green_circle:
 
 | Filename | Preview | 
 |---|---|
 
-# Senior Green
+# :green_square: Senior Green :green_square: 
 
 | Filename | Preview | 
 |---|---|
 
-# Junior Blue
+# :blue_circle: Junior Blue :blue_circle:
 
 | Filename | Preview | 
 |---|---|
 | JuniorBlueSparring-part1-640.gif | ![](https://media.giphy.com/media/Y2Vp9aYs7KB4YJjZdU/giphy.gif)| 
 | JuniorBlueSparring-part2-640.gif | ![](https://media.giphy.com/media/IJTrcKtdSLlQjeYJsH/giphy.gif)| 
 
-# Senior Blue
+# :blue_square: Senior Blue :blue_square:
 
 | Filename | Preview | 
 |---|---|
@@ -47,7 +47,7 @@ make templates
 | SeniorBlueForm-complete-640.gif | ![](https://media.giphy.com/media/IVMLroW0Ct5F27aTVP/giphy-downsized-large.gif)| 
 | Taegeuk4Jang-complete-640.gif | ![](https://media.giphy.com/media/oBm3s8K0doYjSWOVC2/giphy.gif)| 
 
-# Junior Brown
+# :brown_circle: Junior Brown :brown_circle: 
 
 | Filename | Preview | 
 |---|---|
@@ -55,13 +55,13 @@ make templates
 | JuniorBrownSparring-part1-640.gif | ![](https://media.giphy.com/media/aor2iyIkfZAq3sCp36/giphy.gif)| 
 | JuniorBrownKicking-part2-640.gif | ![](https://media.giphy.com/media/I9vKoToiXGpLa4gtUV/giphy.gif)| 
 
-# :brown_square: Senior Brown
+# :brown_square: Senior Brown :brown_square:
 
 | Filename | Preview | 
 |---|---|
 
 
-# Junior Red
+# :red_circle: Junior Red :red_circle:
 
 | Filename | Preview | 
 |---|---|
@@ -73,7 +73,7 @@ make templates
 | JuniorRedForm | ![](https://media.giphy.com/media/9o1d43XADKPJyBrXvX/giphy-downsized-large.gif)| 
 | Taegeuk7Jang-complete-640.gif | ![](https://media.giphy.com/media/tJci3mxQ3RL6JUkBGq/giphy.gif)| 
 
-# Senior Red
+# :red_square: Senior Red :red_square:
 
 | Filename | Preview | 
 |---|---|
@@ -83,7 +83,6 @@ make templates
 | SeniorRedSparring-part1-640.gif | ![](https://media.giphy.com/media/IEW9UEg2qyeCumfMA7/giphy.gif)| 
 | SeniorRedSparring-part2-640.gif | ![](https://media.giphy.com/media/5xTEBSWE1lcNy7B5M7/giphy.gif)| 
 | Taegeuk8Jang-complete-640.gif | ![](https://media.giphy.com/media/eHZdU16068fBluCZj6/giphy.gif)| 
-
 
 
 ## Usage
