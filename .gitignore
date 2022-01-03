@@ -1,2 +1,3 @@
-input/*.mp4
 .DS_Store
+*.mp4
+*.gif #TODO: undo this once you find a way around push limit (not git-lfs)

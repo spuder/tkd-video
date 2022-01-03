@@ -1,0 +1,33 @@
+version: "3.9"
+
+x-app: &default-app
+    image: spuder/gifr:latest
+    volumes:
+        - ./input:/input
+        - ./output:/output
+
+services:
+    taegeuk8-complete:
+        <<: *default-app
+        env_file:
+            - sr-red/Taegeuk8Jang-complete.env
+    # taegeuk7-parts:
+    #     <<: *default-app
+    #     env_file:
+    #         - sr-red/Taegeuk7Jang-parts.env
+    sr-red-form-complete:
+        <<: *default-app
+        env_file:
+        - sr-red/SeniorRedForm-complete.env
+    # sr-red-sparring:
+    #     <<: *default-app
+    #     env_file:
+    #     - sr-red/SeniorRedSparring.env
+    sr-red-kicking:
+        <<: *default-app
+        env_file:
+        - sr-red/SeniorRedKicking.env
+    # sr-red-nunchuck:
+    #     <<: *default-app
+    #     env_file:
+    #     - sr-red/SeniorRedNunchuckas.env

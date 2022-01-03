@@ -1,6 +1,8 @@
 all: template 1 2 3 4 5 6 7 8
 template:
 	./lib/yaml2md.rb
+clean:
+	rm -r output/*
 1:
 	docker compose -f docker-compose.taegeuk1.yaml up --remove-orphans
 2:
