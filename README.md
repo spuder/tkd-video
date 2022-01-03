@@ -54,12 +54,24 @@ make templates
 
 | Filename | Preview | 
 |---|---|
+| JuniorRedSparring-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F0ZFJ24wFme03SMWDVy%2Fgiphy.gif)| 
+| JuniorRedSparring-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fsb1oQUrB5NXQP0FJf2%2Fgiphy.gif)| 
+| JuniorRedKicking-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F7KSgR8N0GI3TUwbpYd%2Fgiphy.gif)| 
+| JuniorRedKicking-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F41PAO6zZ8QqyewezQx%2Fgiphy.gif)| 
+| JuniorRedNunchuck | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FVgWBfy0Me4zVeACoz1%2Fgiphy-downsized-large.gif)| 
+| JuniorRedForm | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F9o1d43XADKPJyBrXvX%2Fgiphy-downsized-large.gif)| 
+| Taegeuk7Jang-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FtJci3mxQ3RL6JUkBGq%2Fgiphy.gif)| 
 
 # Senior Red
 
 | Filename | Preview | 
 |---|---|
-
+| SeniorRedForm-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FB5r3Yumgl83VJ6EGyS%2Fgiphy-downsized-large.gif)| 
+| SeniorRedKicking-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FKrxbSMg5924Q6HU3fV%2Fgiphy.gif)| 
+| SeniorRedKicking-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FCkj0woYpjv0uvgWC7a%2Fgiphy.gif)| 
+| SeniorRedSparring-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FIEW9UEg2qyeCumfMA7%2Fgiphy.gif)| 
+| SeniorRedSparring-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F5xTEBSWE1lcNy7B5M7%2Fgiphy.gif)| 
+| Taegeuk8Jang-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FeHZdU16068fBluCZj6%2Fgiphy.gif)| 
 
 
 

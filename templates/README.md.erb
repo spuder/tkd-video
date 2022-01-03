@@ -24,7 +24,7 @@ make templates
 | Filename | Preview | 
 |---|---|
 <% Dir["output/JuniorGreen*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+| <%= url_encode(File.basename(gif)) -%>| ![](<%= gifs[File.basename(gif)] %>) | 
 <% end -%>
 
 # Senior Green
@@ -55,16 +55,16 @@ make templates
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/JuniorBrown*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% jr_brown.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 # Senior Brown
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/SeniorBrown*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% sr_brown.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 
@@ -72,18 +72,17 @@ make templates
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/JuniorRed*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% jr_red.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 # Senior Red
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/SeniorRed*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% sr_red.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
-
 
 
 
@@ -91,8 +90,8 @@ make templates
 
 A `Makefile` is included to simplify making videos
 
-``
-make all -j4
+```
+make all
 ```
 
 Or to make a single video
