@@ -33,16 +33,27 @@ make templates
 
 | Filename | Preview | 
 |---|---|
+| JuniorBlueSparring-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FY2Vp9aYs7KB4YJjZdU%2Fgiphy.gif)| 
+| JuniorBlueSparring-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FIJTrcKtdSLlQjeYJsH%2Fgiphy.gif)| 
 
 # Senior Blue
 
 | Filename | Preview | 
 |---|---|
+| SeniorBlueSparring-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FlpvDQo3px8VUxyxXaq%2Fgiphy.gif)| 
+| SeniorBlueSparring-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FNz3ey0rOcuzp5wUnpu%2Fgiphy.gif)| 
+| SeniorBlueKicking-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FzXcF6l14fnJog5D0OP%2Fgiphy.gif)| 
+| SeniorBlueKicking-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FPuruVzNyKySFAjciou%2Fgiphy.gif)| 
+| SeniorBlueForm-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FIVMLroW0Ct5F27aTVP%2Fgiphy-downsized-large.gif)| 
+| Taegeuk4Jang-complete-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FoBm3s8K0doYjSWOVC2%2Fgiphy.gif)| 
 
 # Junior Brown
 
 | Filename | Preview | 
 |---|---|
+| JuniorBrownSparring-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FRjpuUuSC6FH4zb4QnD%2Fgiphy.gif)| 
+| JuniorBrownSparring-part1-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Faor2iyIkfZAq3sCp36%2Fgiphy.gif)| 
+| JuniorBrownKicking-part2-640.gif | ![](https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FI9vKoToiXGpLa4gtUV%2Fgiphy.gif)| 
 
 # Senior Brown
 
@@ -79,8 +90,8 @@ make templates
 
 A `Makefile` is included to simplify making videos
 
-``
-make all -j4
+```
+make all
 ```
 
 Or to make a single video

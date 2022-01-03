@@ -6,9 +6,12 @@ include ERB::Util
 
 gifs = YAML.load_file(File.join(__dir__,'../giphy.yaml'))
 
-# Create variable jrred from gifs where key matches red* case insensitive
-jr_brown=[]
-sr_brown=[]
+jr_green = gifs.select { |k,v| k.match(/JuniorGreen*/) || k.match(/Taegeuk1Jang/)  }
+sr_green = gifs.select { |k,v| k.match(/SeniorGreen*/) || k.match(/Taegeuk2Jang/) }
+jr_blue = gifs.select { |k,v| k.match(/JuniorBlue*/) || k.match(/Taegeuk3Jang/)  }
+sr_blue = gifs.select { |k,v| k.match(/SeniorBlue*/) || k.match(/Taegeuk4Jang/) }
+jr_brown = gifs.select { |k,v| k.match(/JuniorBrown*/) || k.match(/Taegeuk5Jang/)  }
+sr_brown = gifs.select { |k,v| k.match(/SeniorBrown*/) || k.match(/Taegeuk6Jang/)  }
 jr_red = gifs.select { |k,v| k.match(/JuniorRed*/) || k.match(/Taegeuk7Jang/)  }
 sr_red = gifs.select { |k,v| k.match(/SeniorRed*/) || k.match(/Taegeuk8Jang/)  }
 

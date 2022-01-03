@@ -23,32 +23,32 @@ make templates
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/JuniorGreen*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](<%= gifs[File.basename(gif)] %>) | 
+<% jr_green.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 # Senior Green
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/SeniorGreen*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% sr_green.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 # Junior Blue
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/JuniorBlue*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% jr_blue.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 # Senior Blue
 
 | Filename | Preview | 
 |---|---|
-<% Dir["output/SeniorBlue*.gif"].each do |gif| -%>
-| <%= url_encode(File.basename(gif)) -%>| ![](./<%= gif %>) | 
+<% sr_blue.each do |k,v| -%>
+| <%= k -%> | ![](<%= url_encode(v) -%>)| 
 <% end -%>
 
 # Junior Brown
