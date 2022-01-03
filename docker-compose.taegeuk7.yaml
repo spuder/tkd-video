@@ -39,7 +39,7 @@ services:
         <<: *default-app
         env_file:
             - jr-red/Taegeuk7Jang-Mureupchigi1.env
-    taegeuk7-Mureupchigi1:
+    taegeuk7-Mureupchigi2:
         <<: *default-app
         env_file:
             - jr-red/Taegeuk7Jang-Mureupchigi2.env
