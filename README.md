@@ -35,6 +35,11 @@ make templates
 |---|---|
 | JuniorBlueSparring-part1-640.gif | ![](https://media.giphy.com/media/Y2Vp9aYs7KB4YJjZdU/giphy.gif)| 
 | JuniorBlueSparring-part2-640.gif | ![](https://media.giphy.com/media/IJTrcKtdSLlQjeYJsH/giphy.gif)| 
+| JuniorBlueForm-complete | ![](https://media.giphy.com/media/XQvFqRWrTFb5yOS5og/giphy.gif)| 
+| JuniorBlueForm-part1 | ![](https://imgur.com/WH0IeIk.gif)| 
+| JuniorBlueForm-part2 | ![](https://imgur.com/ZSn8fMf.gif)| 
+| JuniorBlueForm-part3 | ![](https://imgur.com/7AOnHI6.gif)| 
+| JuniorBlueForm-part4 | ![](https://imgur.com/SOhY068.gif)| 
 
 # :blue_square: Senior Blue :blue_square:
 
@@ -83,6 +88,10 @@ make templates
 | SeniorRedSparring-part1-640.gif | ![](https://media.giphy.com/media/IEW9UEg2qyeCumfMA7/giphy.gif)| 
 | SeniorRedSparring-part2-640.gif | ![](https://media.giphy.com/media/5xTEBSWE1lcNy7B5M7/giphy.gif)| 
 | Taegeuk8Jang-complete-640.gif | ![](https://media.giphy.com/media/eHZdU16068fBluCZj6/giphy.gif)| 
+| Taegeuk8Jang-part1 | ![](https://media.giphy.com/media/gTr5mGLrTVl5tPT7G4/giphy.gif)| 
+| Taegeuk8Jang-part2 | ![](https://media.giphy.com/media/Tkxvas2pXFuKk3MRtr/giphy.gif)| 
+| Taegeuk8Jang-part3 | ![](https://media.giphy.com/media/iLvFTQwKMJASAFVDaM/giphy.gif)| 
+| Taegeuk8Jang-part4 | ![](https://media.giphy.com/media/ub37OaoP0qqzGCXhly/giphy.gif)| 
 
 
 ## Usage
