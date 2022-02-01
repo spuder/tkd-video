@@ -83,15 +83,15 @@ services:
         <<: *default-app
         env_file:
         - jr-red/JuniorRedForm-complete.env
-    jr-red-sparring:
-        <<: *default-app
-        env_file:
-        - jr-red/JuniorRedSparring.env
+    # jr-red-sparring:
+    #     <<: *default-app
+    #     env_file:
+    #     - jr-red/JuniorRedSparring.env
     jr-red-kicking:
         <<: *default-app
         env_file:
         - jr-red/JuniorRedKicking.env
-    jr-red-nunchuck:
-        <<: *default-app
-        env_file:
-        - jr-red/JuniorRedNunchuckas.env
+    # jr-red-nunchuck:
+    #     <<: *default-app
+    #     env_file:
+    #     - jr-red/JuniorRedNunchuckas.env
