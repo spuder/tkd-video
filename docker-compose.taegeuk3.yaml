@@ -15,10 +15,10 @@ services:
         <<: *default-app
         env_file:
             - jr-blue/Taegeuk3Jang-complete.env
-    # jr-blue-form-complete:
-    #     <<: *default-app
-    #     env_file:
-    #     - JuniorBlueForm-complete.env
+    jr-blue-form-complete:
+        <<: *default-app
+        env_file:
+        - jr-blue/JuniorBlueForm-complete.env
     jr-blue-sparring:
         <<: *default-app
         env_file:
