@@ -27,7 +27,7 @@ services:
         <<: *default-app
         env_file:
         - sr-red/SeniorRedKicking.env
-    # sr-red-nunchuck:
-    #     <<: *default-app
-    #     env_file:
-    #     - sr-red/SeniorRedNunchuckas.env
+    sr-red-nunchuck:
+        <<: *default-app
+        env_file:
+        - sr-red/SeniorRedNunchuckas.env
