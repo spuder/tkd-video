@@ -7,11 +7,11 @@ x-app: &default-app
         - ./output:/output
 
 services:
-    # taegeuk3-parts:
+    # taegeuk1-parts:
     #     <<: *default-app
     #     env_file:
     #         - jr-green/Taegeuk1Jang-Parts.env
-    taegeuk3-complete:
+    taegeuk1-complete:
         <<: *default-app
         env_file:
             - jr-green/Taegeuk1Jang-complete.env
@@ -27,3 +27,7 @@ services:
         <<: *default-app
         env_file:
         - jr-green/JuniorGreenKicking.env
+    jr-green-nunchuck:
+        <<: *default-app
+        env_file:
+        - jr-green/JuniorGreenNunchuck.env
