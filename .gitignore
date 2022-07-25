@@ -1,4 +1,4 @@
 .DS_Store
 *.mp4
 .vscode
-#TODO: undo this once you find a way around push limit (not git-lfs)
+output/*
