@@ -10,16 +10,16 @@ services:
     taegeuk4-parts:
         <<: *default-app
         env_file:
-            - sr-blue/Taegeuk4Jang-Parts.env
+            - taegeuk/sr-blue//Taegeuk4Jang-Parts.env
     taegeuk4-complete:
         <<: *default-app
         env_file:
-            - sr-blue/Taegeuk4Jang-complete.env
-    sr-blue-form-complete:
+            - taegeuk/sr-blue//Taegeuk4Jang-complete.env
+    taegeuk/sr-blue/-form-complete:
         <<: *default-app
         env_file:
-        - sr-blue/SeniorBlueForm-complete.env
-    sr-blue-sparring:
+        - taegeuk/sr-blue//SeniorBlueForm-complete.env
+    taegeuk/sr-blue/-sparring:
         <<: *default-app
         env_file:
-        - sr-blue/SeniorBlueSparring.env
+        - taegeuk/sr-blue//SeniorBlueSparring.env

@@ -10,24 +10,24 @@ services:
     # taegeuk2-parts:
     #     <<: *default-app
     #     env_file:
-    #         - sr-green/Taegeuk2Jang-Parts.env
+    #         - taegeuk/sr-green//Taegeuk2Jang-Parts.env
     taegeuk2-complete:
         <<: *default-app
         env_file:
-            - sr-green/Taegeuk2Jang-complete.env
-    sr-green-form-complete:
+            - taegeuk/sr-green//Taegeuk2Jang-complete.env
+    taegeuk/sr-green/-form-complete:
         <<: *default-app
         env_file:
-        - sr-green/SeniorGreenForm-complete.env
-    sr-green-sparring:
+        - taegeuk/sr-green//SeniorGreenForm-complete.env
+    taegeuk/sr-green/-sparring:
         <<: *default-app
         env_file:
-        - sr-green/SeniorGreenSparring.env
-    sr-green-kicking:
+        - taegeuk/sr-green//SeniorGreenSparring.env
+    taegeuk/sr-green/-kicking:
         <<: *default-app
         env_file:
-        - sr-green/SeniorGreenKicking.env
-    sr-green-nunchuck:
+        - taegeuk/sr-green//SeniorGreenKicking.env
+    taegeuk/sr-green/-nunchuck:
         <<: *default-app
         env_file:
-        - sr-green/SeniorGreenNunchuck.env
+        - taegeuk/sr-green//SeniorGreenNunchuck.env

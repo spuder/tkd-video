@@ -10,24 +10,24 @@ services:
     taegeuk8-complete:
         <<: *default-app
         env_file:
-            - sr-red/Taegeuk8Jang-complete.env
+            - taegeuk/sr-red//Taegeuk8Jang-complete.env
     taegeuk8-parts:
         <<: *default-app
         env_file:
-            - sr-red/Taegeuk8Jang-parts.env
-    sr-red-form-complete:
+            - taegeuk/sr-red//Taegeuk8Jang-parts.env
+    taegeuk/sr-red/-form-complete:
         <<: *default-app
         env_file:
-        - sr-red/SeniorRedForm-complete.env
-    sr-red-sparring:
+        - taegeuk/sr-red//SeniorRedForm-complete.env
+    taegeuk/sr-red/-sparring:
         <<: *default-app
         env_file:
-        - sr-red/SeniorRedSparring.env
-    sr-red-kicking:
+        - taegeuk/sr-red//SeniorRedSparring.env
+    taegeuk/sr-red/-kicking:
         <<: *default-app
         env_file:
-        - sr-red/SeniorRedKicking.env
-    sr-red-nunchuck:
+        - taegeuk/sr-red//SeniorRedKicking.env
+    taegeuk/sr-red/-nunchuck:
         <<: *default-app
         env_file:
-        - sr-red/SeniorRedNunchuckas.env
+        - taegeuk/sr-red//SeniorRedNunchuckas.env

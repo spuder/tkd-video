@@ -23,11 +23,25 @@ make templates
 
 | Filename | Preview | 
 |---|---|
+| JuniorGreenForm-complete-640.gif | ![](https://media2.giphy.com/media/nDhYdsdPYURQaEvQES/giphy.gif)| 
+| JuniorGreenKicking-part1-640.gif | ![](https://media3.giphy.com/media/5OwdQkeOVvDK81cD2z/giphy.gif)| 
+| JuniorGreenKicking-part2-640.gif | ![](https://media0.giphy.com/media/d9XCX7W0k4ClwkOhLI/giphy.gif)| 
+| JuniorGreenSparring-part1-640.gif | ![](https://media3.giphy.com/media/E0zROpojY1xyrDJu7m/giphy.gif)| 
+| JuniorGreenSparring-part2-640.gif | ![](https://media3.giphy.com/media/TScXLcqM7obbmtQbDb/giphy.gif)| 
+| Taegeuk1Jang-complete-640.gif | ![](https://media4.giphy.com/media/UUZUf3FDhyPUAB3YyI/giphy.gif)| 
+| JuniorGreenNunchuck-640.gif | ![](https://media1.giphy.com/media/bJUwKxafM4NPBOcYpA/giphy.gif)| 
 
 # :green_square: Senior Green :green_square: 
 
 | Filename | Preview | 
 |---|---|
+| SeniorGreenForm-complete-640.gif | ![](https://media.giphy.com/media/iXXVK7fzEsb27kcHKx/giphy.gif)| 
+| SeniorGreenKicking-part1-640.gif | ![](https://media2.giphy.com/media/wCICFN31jaYg8Os7sU/giphy.gif)| 
+| SeniorGreenKicking-part2-640.gif | ![](https://media0.giphy.com/media/zu9Y55rIFKmau2sTva/giphy.gif)| 
+| SeniorGreenSparring-part1-640.gif | ![](https://media2.giphy.com/media/P6HVREmZeMOgCB4ZWJ/giphy.gif)| 
+| SeniorGreenSparring-part2-640.gif | ![](https://media3.giphy.com/media/JrWjGBj34vH1MqoclE/giphy.gif)| 
+| Taegeuk2Jang-complete-640.gif | ![](https://media3.giphy.com/media/bDFyjibsViLpdvcMrc/giphy.gif)| 
+| SeniorGreenNunchuck-640.gif | ![](https://media2.giphy.com/media/l1FlUriKjRSV59BGlI/giphy.gif)| 
 
 # :large_blue_circle: Junior Blue :large_blue_circle:
 
@@ -35,7 +49,9 @@ make templates
 |---|---|
 | JuniorBlueSparring-part1-640.gif | ![](https://media.giphy.com/media/Y2Vp9aYs7KB4YJjZdU/giphy.gif)| 
 | JuniorBlueSparring-part2-640.gif | ![](https://media.giphy.com/media/IJTrcKtdSLlQjeYJsH/giphy.gif)| 
-| JuniorBlueForm-complete | ![](https://media.giphy.com/media/XQvFqRWrTFb5yOS5og/giphy.gif)| 
+| JuniorBlueKicking-part1-640.gif | ![](https://media.giphy.com/media/tSQbhOSd9Xw9WZrjlV/giphy.gif)| 
+| JuniorBlueKicking-part2-640.gif | ![](https://media.giphy.com/media/hTPSmRXmPYYfgy4pW2/giphy.gif)| 
+| JuniorBlueForm-complete | ![](https://media.giphy.com/media/B1gDxuAiMwfhQFGoaI/giphy-downsized-large.gif)| 
 | JuniorBlueForm-part1 | ![](https://imgur.com/WH0IeIk.gif)| 
 | JuniorBlueForm-part2 | ![](https://imgur.com/ZSn8fMf.gif)| 
 | JuniorBlueForm-part3 | ![](https://imgur.com/7AOnHI6.gif)| 
@@ -70,13 +86,14 @@ make templates
 
 | Filename | Preview | 
 |---|---|
-| JuniorRedSparring-part2-640.gif | ![](https://media.giphy.com/media/0ZFJ24wFme03SMWDVy/giphy.gif)| 
 | JuniorRedSparring-part1-640.gif | ![](https://media.giphy.com/media/sb1oQUrB5NXQP0FJf2/giphy.gif)| 
+| JuniorRedSparring-part2-640.gif | ![](https://media.giphy.com/media/0ZFJ24wFme03SMWDVy/giphy.gif)| 
 | JuniorRedKicking-part2-640.gif | ![](https://media.giphy.com/media/7KSgR8N0GI3TUwbpYd/giphy.gif)| 
 | JuniorRedKicking-part1-640.gif | ![](https://media.giphy.com/media/41PAO6zZ8QqyewezQx/giphy.gif)| 
 | JuniorRedNunchuck | ![](https://media.giphy.com/media/VgWBfy0Me4zVeACoz1/giphy-downsized-large.gif)| 
 | JuniorRedForm | ![](https://media.giphy.com/media/9o1d43XADKPJyBrXvX/giphy-downsized-large.gif)| 
-| Taegeuk7Jang-complete-640.gif | ![](https://media.giphy.com/media/tJci3mxQ3RL6JUkBGq/giphy.gif)| 
+| Taegeuk7Jang-complete-640.gif | ![](https://media.giphy.com/media/pBUEvSI8zwkw9fGj2Y/giphy.gif)| 
+| Taegeuk7Jang-complete | ![](https://media.giphy.com/media/XQvFqRWrTFb5yOS5og/giphy.gif)| 
 
 # :red_square: Senior Red :red_square:
 
@@ -88,10 +105,15 @@ make templates
 | SeniorRedSparring-part1-640.gif | ![](https://media.giphy.com/media/IEW9UEg2qyeCumfMA7/giphy.gif)| 
 | SeniorRedSparring-part2-640.gif | ![](https://media.giphy.com/media/5xTEBSWE1lcNy7B5M7/giphy.gif)| 
 | Taegeuk8Jang-complete-640.gif | ![](https://media.giphy.com/media/eHZdU16068fBluCZj6/giphy.gif)| 
-| Taegeuk8Jang-part1 | ![](https://media.giphy.com/media/gTr5mGLrTVl5tPT7G4/giphy.gif)| 
-| Taegeuk8Jang-part2 | ![](https://media.giphy.com/media/Tkxvas2pXFuKk3MRtr/giphy.gif)| 
-| Taegeuk8Jang-part3 | ![](https://media.giphy.com/media/iLvFTQwKMJASAFVDaM/giphy.gif)| 
-| Taegeuk8Jang-part4 | ![](https://media.giphy.com/media/ub37OaoP0qqzGCXhly/giphy.gif)| 
+| Taegeuk8Jang-part1-extended | ![](https://media.giphy.com/media/gTr5mGLrTVl5tPT7G4/giphy.gif)| 
+| Taegeuk8Jang-part2-extended | ![](https://media.giphy.com/media/Tkxvas2pXFuKk3MRtr/giphy.gif)| 
+| Taegeuk8Jang-part3-extended | ![](https://media.giphy.com/media/iLvFTQwKMJASAFVDaM/giphy.gif)| 
+| Taegeuk8Jang-part4-extended | ![](https://media.giphy.com/media/ub37OaoP0qqzGCXhly/giphy.gif)| 
+| Taegeuk8Jang-part1 | ![](https://media.giphy.com/media/Q7MFwuAuyN8EEuVTKH/giphy.gif)| 
+| Taegeuk8Jang-part2 | ![](https://media.giphy.com/media/Lf01UrM9S0wNsvL7Vh/giphy.gif)| 
+| Taegeuk8Jang-part3 | ![](https://media.giphy.com/media/xWwYK4vVfsJ3wDrcQt/giphy.gif)| 
+| Taegeuk8Jang-part4 | ![](https://media.giphy.com/media/H4snyDjciW5ztKvhZH/giphy.gif)| 
+| SeniorRedNunchuck | ![](https://media.giphy.com/media/hKIO3JwGEo4vRzQy4p/giphy-downsized-large.gif)| 
 
 
 ## Usage
