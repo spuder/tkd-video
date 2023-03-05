@@ -1,0 +1,69 @@
+# White -> Yellow
+version: "3.9"
+
+x-app: &default-app
+  image: spuder/gifr:latest
+  volumes:
+    - ./input:/input
+    - ./output:/output
+
+services:
+  form-640:
+    <<: *default-app
+    environment:
+      - VIDEO_URL=https://drive.google.com/file/d/1gZje8CqTnE8niDCefzkD1cK5YzZr4QpZ/view?usp=sharing
+      - SPLITS=00:20^00:38
+      - INPUT_FILE=LT WY Form.mp4
+      - OUTPUT_FILE=LittleTigerWhiteForm
+      - RESOLUTION=640
+      - FPS=16
+
+  form-480:
+    <<: *default-app
+    environment:
+      - VIDEO_URL=https://drive.google.com/file/d/1gZje8CqTnE8niDCefzkD1cK5YzZr4QpZ/view?usp=sharing
+      - SPLITS=00:20^00:38
+      - INPUT_FILE=LT WY Form.mp4
+      - OUTPUT_FILE=LittleTigerWhiteForm
+      - RESOLUTION=480
+      - FPS=8
+
+  handtechnique-640:
+    <<: *default-app
+    environment:
+      - VIDEO_URL=https://drive.google.com/file/d/1PppBgZ3EI-IyF2cHOOwC6h_97l_DMFW5/view?usp=share_link
+      - SPLITS=00:10^00:26
+      - INPUT_FILE=LT WY HandTechnique.mp4
+      - OUTPUT_FILE=LittleTigerWhiteHandTechnique
+      - RESOLUTION=640
+      - FPS=16
+
+  handtechnique-480:
+    <<: *default-app
+    environment:
+      - VIDEO_URL=https://drive.google.com/file/d/1PppBgZ3EI-IyF2cHOOwC6h_97l_DMFW5/view?usp=share_link
+      - SPLITS=00:10^00:26
+      - INPUT_FILE=LT WY HandTechnique.mp4
+      - OUTPUT_FILE=LittleTigerWhiteHandTechnique
+      - RESOLUTION=480
+      - FPS=8
+
+  kicks-640:
+    <<: *default-app
+    environment:
+      - VIDEO_URL=https://drive.google.com/file/d/1BUKCgH-I6vII1e9z00jflreL4PUHxfdK/view?usp=share_link
+      - SPLITS=00:13^00:25
+      - INPUT_FILE=LT WY Kicks.mp4
+      - OUTPUT_FILE=LittleTigerWhiteKicks
+      - RESOLUTION=640
+      - FPS=16
+
+  kicks-480:
+    <<: *default-app
+    environment:
+      - VIDEO_URL=https://drive.google.com/file/d/1BUKCgH-I6vII1e9z00jflreL4PUHxfdK/view?usp=share_link
+      - SPLITS=00:13^00:25
+      - INPUT_FILE=LT WY Kicks.mp4
+      - OUTPUT_FILE=LittleTigerWhiteKicks
+      - RESOLUTION=480
+      - FPS=8
