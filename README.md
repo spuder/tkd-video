@@ -67,6 +67,7 @@ make templates
 | SeniorBlueKicking-part1-640.gif | ![](https://media.giphy.com/media/PuruVzNyKySFAjciou/giphy.gif)| 
 | SeniorBlueForm-complete-640.gif | ![](https://media.giphy.com/media/IVMLroW0Ct5F27aTVP/giphy-downsized-large.gif)| 
 | Taegeuk4Jang-complete-640.gif | ![](https://media.giphy.com/media/oBm3s8K0doYjSWOVC2/giphy.gif)| 
+| SeniorBlueNunchuck-640.gif | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDMzNmI3NTkyNDg0NzIxNGM3ODUyZjBjYTgyOWJlNGU3NzI4MjkzMyZjdD1n/k4ZLjNeRkiDMBGUzWS/giphy-downsized-large.gif)| 
 
 # :brown_circle: Junior Brown :brown_circle: 
 
@@ -75,6 +76,7 @@ make templates
 | JuniorBrownSparring-part2-640.gif | ![](https://media.giphy.com/media/RjpuUuSC6FH4zb4QnD/giphy.gif)| 
 | JuniorBrownSparring-part1-640.gif | ![](https://media.giphy.com/media/aor2iyIkfZAq3sCp36/giphy.gif)| 
 | JuniorBrownKicking-part2-640.gif | ![](https://media.giphy.com/media/I9vKoToiXGpLa4gtUV/giphy.gif)| 
+| JuniorBrownNunchuck-640.gif | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWE4ZTIzMjc4NzVjZTkxZjA0YmY5NzhhOTI5OGM0ZDg5ZTAxNTBiYyZjdD1n/34ds7dNwTsCgdIkGzZ/giphy-downsized-large.gif)| 
 
 # :brown_square: Senior Brown :brown_square:
 
