@@ -51,12 +51,13 @@ make templates
 | JuniorBlueSparring-part2-640.gif | ![](https://media.giphy.com/media/IJTrcKtdSLlQjeYJsH/giphy.gif)| 
 | JuniorBlueKicking-part1-640.gif | ![](https://media.giphy.com/media/tSQbhOSd9Xw9WZrjlV/giphy.gif)| 
 | JuniorBlueKicking-part2-640.gif | ![](https://media.giphy.com/media/hTPSmRXmPYYfgy4pW2/giphy.gif)| 
-| JuniorBlueForm-complete | ![](https://media.giphy.com/media/B1gDxuAiMwfhQFGoaI/giphy-downsized-large.gif)| 
-| JuniorBlueForm-part1 | ![](https://imgur.com/WH0IeIk.gif)| 
-| JuniorBlueForm-part2 | ![](https://imgur.com/ZSn8fMf.gif)| 
-| JuniorBlueForm-part3 | ![](https://imgur.com/7AOnHI6.gif)| 
-| JuniorBlueForm-part4 | ![](https://imgur.com/SOhY068.gif)| 
-| JuniorBlueNunchuck | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTM4Nzk3YzIyY2M2N2VjZWEwMGNjOTZmOWJmZDg2MmU4NWQwZjk2OSZjdD1n/wqrTwnsHudbRQILA0P/giphy-downsized-large.gif)| 
+| Taegeuk3Jang-complete-640.gif | ![](https://media.giphy.com/media/XQvFqRWrTFb5yOS5og/giphy.gif)| 
+| JuniorBlueForm-complete-640.gif | ![](https://media.giphy.com/media/B1gDxuAiMwfhQFGoaI/giphy-downsized-large.gif)| 
+| JuniorBlueForm-part1-640.gif | ![](https://imgur.com/WH0IeIk.gif)| 
+| JuniorBlueForm-part2-640.gif | ![](https://imgur.com/ZSn8fMf.gif)| 
+| JuniorBlueForm-part3-640.gif | ![](https://imgur.com/7AOnHI6.gif)| 
+| JuniorBlueForm-part4-640.gif | ![](https://imgur.com/SOhY068.gif)| 
+| JuniorBlueNunchuck-640.gif | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTM4Nzk3YzIyY2M2N2VjZWEwMGNjOTZmOWJmZDg2MmU4NWQwZjk2OSZjdD1n/wqrTwnsHudbRQILA0P/giphy-downsized-large.gif)| 
 
 # :blue_square: Senior Blue :blue_square:
 
@@ -77,13 +78,13 @@ make templates
 | JuniorBrownSparring-part2-640.gif | ![](https://media.giphy.com/media/RjpuUuSC6FH4zb4QnD/giphy.gif)| 
 | JuniorBrownSparring-part1-640.gif | ![](https://media.giphy.com/media/aor2iyIkfZAq3sCp36/giphy.gif)| 
 | JuniorBrownKicking-part2-640.gif | ![](https://media.giphy.com/media/I9vKoToiXGpLa4gtUV/giphy.gif)| 
-| JuniorBrownNunchuck-640.gif | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWE4ZTIzMjc4NzVjZTkxZjA0YmY5NzhhOTI5OGM0ZDg5ZTAxNTBiYyZjdD1n/34ds7dNwTsCgdIkGzZ/giphy-downsized-large.gif)| 
+| JuniorBrownNunchuck-640.gif | ![](https://media.giphy.com/media/34ds7dNwTsCgdIkGzZ/giphy-downsized-large.gif)| 
 
 # :brown_square: Senior Brown :brown_square:
 
 | Filename | Preview | 
 |---|---|
-| SeniorBrownNunchuck-640.gif | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmFjZWNlMGMyMjA1Y2FhNzRhODUxMTExYzY3MGIzMDEwZmQ0OTRkOSZjdD1n/DAQaBbEokPFfdPXqGs/giphy-downsized-large.gif)| 
+| SeniorBrownNunchuck-640.gif | ![](https://media.giphy.com/media/DAQaBbEokPFfdPXqGs/giphy-downsized-large.gif)| 
 
 
 # :red_circle: Junior Red :red_circle:
@@ -97,7 +98,6 @@ make templates
 | JuniorRedNunchuck | ![](https://media.giphy.com/media/VgWBfy0Me4zVeACoz1/giphy-downsized-large.gif)| 
 | JuniorRedForm | ![](https://media.giphy.com/media/9o1d43XADKPJyBrXvX/giphy-downsized-large.gif)| 
 | Taegeuk7Jang-complete-640.gif | ![](https://media.giphy.com/media/pBUEvSI8zwkw9fGj2Y/giphy.gif)| 
-| Taegeuk7Jang-complete | ![](https://media.giphy.com/media/XQvFqRWrTFb5yOS5og/giphy.gif)| 
 
 # :red_square: Senior Red :red_square:
 
