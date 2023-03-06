@@ -7,19 +7,117 @@ x-app: &default-app
         - ./output:/output
 
 services:
-    taegeuk4-parts:
+    taegeuk4-parts-640:
         <<: *default-app
-        env_file:
-            - taegeuk/sr-blue//Taegeuk4Jang-Parts.env
-    taegeuk4-complete:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=Lt917gacJho
+            - SPLITS=7:00^7:14,8:26.5^8:42,9:31^9:50,10:44^10:58
+            - INPUT_FILE=Taegeuk4Jang.mp4
+            - OUTPUT_FILE=Taegeuk4Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk4-parts-480:
         <<: *default-app
-        env_file:
-            - taegeuk/sr-blue//Taegeuk4Jang-complete.env
-    taegeuk/sr-blue/-form-complete:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=Lt917gacJho
+            - SPLITS=7:00^7:14,8:26.5^8:42,9:31^9:50,10:44^10:58
+            - INPUT_FILE=Taegeuk4Jang.mp4
+            - OUTPUT_FILE=Taegeuk4Jang
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk4-complete-640:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-blue//SeniorBlueForm-complete.env
-    taegeuk/sr-blue/-sparring:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=Lt917gacJho
+            - SPLITS=1:37^2:20
+            - INPUT_FILE=Taegeuk4Jang.mp4
+            - OUTPUT_FILE=Taegeuk4Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk4-complete-480:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-blue//SeniorBlueSparring.env
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=Lt917gacJho
+            - SPLITS=1:37^2:20
+            - INPUT_FILE=Taegeuk4Jang.mp4
+            - OUTPUT_FILE=Taegeuk4Jang
+            - RESOLUTION=480
+            - FPS=4
+    sr-blue-form-complete-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AMyAnbchRJfyVkg&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215436&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/sW3l32Er4fo
+            - SPLITS=9^46
+            - INPUT_FILE=Sr. Blue Belt Form.mp4
+            - OUTPUT_FILE=SeniorBlueForm
+            - RESOLUTION=640
+            - FPS=10
+    sr-blue-form-complete-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AMyAnbchRJfyVkg&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215436&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/sW3l32Er4fo
+            - SPLITS=9^46
+            - INPUT_FILE=Sr. Blue Belt Form.mp4
+            - OUTPUT_FILE=SeniorBlueForm
+            - RESOLUTION=480
+            - FPS=4
+    sr-blue-sparring-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAQdc5RJPnUY8ok&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215438&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/tOiADACTlWg
+            - SPLITS=12^19,25^32
+            - INPUT_FILE=Sr. Blue Belt One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorBlueSparring
+            - RESOLUTION=640
+            - FPS=10
+    sr-blue-sparring-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAQdc5RJPnUY8ok&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215438&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/tOiADACTlWg
+            - SPLITS=12^19,25^32
+            - INPUT_FILE=Sr. Blue Belt One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorBlueSparring
+            - RESOLUTION=480
+            - FPS=4
+    sr-blue-kicking-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJ6uVSH8us8oNRU&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215437&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/mgJQXxG7amk
+            - SPLITS=6^12,14^22
+            - INPUT_FILE=Sr. Blue Belt Kicking.mp4
+            - OUTPUT_FILE=SeniorBlueKicking
+            - RESOLUTION=640
+            - FPS=10
+    sr-blue-kicking-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJ6uVSH8us8oNRU&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215437&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/mgJQXxG7amk
+            - SPLITS=6^12,14^22
+            - INPUT_FILE=Sr. Blue Belt Kicking.mp4
+            - OUTPUT_FILE=SeniorBlueKicking
+            - RESOLUTION=480
+            - FPS=4
+    sr-blue-nunchuck-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/1tXRslFCdhj25xhm6G-m1ix0r5mAs1N5V/view?usp=share_link
+            - SPLITS=7^27
+            - INPUT_FILE=Sr. Blue Nunchukas.mp4
+            - OUTPUT_FILE=SeniorBlueNunchuck
+            - RESOLUTION=640
+            - FSP=10
+    sr-blue-nunchuck-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/1tXRslFCdhj25xhm6G-m1ix0r5mAs1N5V/view?usp=share_link
+            - SPLITS=7^27
+            - INPUT_FILE=Sr. Blue Nunchukas.mp4
+            - OUTPUT_FILE=SeniorBlueNunchuck
+            - RESOLUTION=480
+            - FSP=8

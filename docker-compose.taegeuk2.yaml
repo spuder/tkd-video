@@ -11,6 +11,25 @@ services:
     #     <<: *default-app
     #     env_file:
     #         - taegeuk/sr-green/taegeuk2Jang-Parts.env
+    
+    taegeuk2-parts-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://youtu.be/tGlrUplKHh8
+            - SPLITS=2:39^2:53,4:13.5^4:29,5:46^5:51,6:49^6:59
+            - INPUT_FILE=Taegeuk2Jang.mp4
+            - OUTPUT_FILE=Taegeuk2Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk2-parts-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://youtu.be/tGlrUplKHh8
+            - SPLITS=2:39^2:53,4:13.5^4:29,5:46^5:51,6:49^6:59
+            - INPUT_FILE=Taegeuk2Jang.mp4
+            - OUTPUT_FILE=Taegeuk2Jang
+            - RESOLUTION=480
+            - FPS=4
     taegeuk2-complete-640:
         <<: *default-app
         environment:
