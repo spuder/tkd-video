@@ -7,27 +7,113 @@ x-app: &default-app
         - ./output:/output
 
 services:
-    taegeuk8-complete:
+    taegeuk8-complete-640:
         <<: *default-app
-        env_file:
-            - taegeuk/sr-red//Taegeuk8Jang-complete.env
-    taegeuk8-parts:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=Gr_Je2ZkgkI
+            - SPLITS=1:14^2:15
+            - INPUT_FILE=Taegeuk8Jang.mp4
+            - OUTPUT_FILE=Taegeuk8Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk8-complete-480:
         <<: *default-app
-        env_file:
-            - taegeuk/sr-red//Taegeuk8Jang-parts.env
-    taegeuk/sr-red/-form-complete:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=Gr_Je2ZkgkI
+            - SPLITS=1:14^2:15
+            - INPUT_FILE=Taegeuk8Jang.mp4
+            - OUTPUT_FILE=Taegeuk8Jang
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk8-parts-640:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-red//SeniorRedForm-complete.env
-    taegeuk/sr-red/-sparring:
+        environment: 
+            - VIDEO_URL=https://www.youtube.com/watch?v=Gr_Je2ZkgkI
+            - SPLITS=1:16.5^1:23,1:23^1:48,1:48^1:58,1:58^2:10
+            - INPUT_FILE=Taegeuk8Jang.mp4
+            - OUTPUT_FILE=Taegeuk8Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk8-parts-480:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-red//SeniorRedSparring.env
-    taegeuk/sr-red/-kicking:
+        environment: 
+            - VIDEO_URL=https://www.youtube.com/watch?v=Gr_Je2ZkgkI
+            - SPLITS=1:16.5^1:23,1:23^1:48,1:48^1:58,1:58^2:10
+            - INPUT_FILE=Taegeuk8Jang.mp4
+            - OUTPUT_FILE=Taegeuk8Jang
+            - RESOLUTION=480
+            - FPS=4
+    sr-red-form-complete-640:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-red//SeniorRedKicking.env
-    taegeuk/sr-red/-nunchuck:
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJkCowkxufSuZk8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215448&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/Mcejx1433MI
+            - SPLITS=0:08^0:55
+            - INPUT_FILE=Sr. Red Form.mp4
+            - OUTPUT_FILE=SeniorRedForm
+            - RESOLUTION=640
+            - FPS=10
+    sr-red-form-complete-480:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-red//SeniorRedNunchuckas.env
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJkCowkxufSuZk8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215448&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/Mcejx1433MI
+            - SPLITS=0:08^0:55
+            - INPUT_FILE=Sr. Red Form.mp4
+            - OUTPUT_FILE=SeniorRedForm
+            - RESOLUTION=480
+            - FPS=4
+    sr-red-sparring-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://youtu.be/xru8-jP83-M
+            - SPLITS=10^18,24^33
+            - INPUT_FILE=Sr. Red One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorRedSparring
+            - RESOLUTION=640
+            - FPS=10
+    sr-red-sparring-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://youtu.be/xru8-jP83-M
+            - SPLITS=10^18,24^33
+            - INPUT_FILE=Sr. Red One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorRedSparring
+            - RESOLUTION=480
+            - FPS=4
+    sr-red-kicking-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://youtu.be/hsOyXLyuOHc
+            - SPLITS=6^12,14^22
+            - INPUT_FILE=Sr. Red Kicking.mp4
+            - OUTPUT_FILE=SeniorRedKicking
+            - RESOLUTION=640
+            - FPS=10
+    sr-red-kicking-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://youtu.be/hsOyXLyuOHc
+            - SPLITS=6^12,14^22
+            - INPUT_FILE=Sr. Red Kicking.mp4
+            - OUTPUT_FILE=SeniorRedKicking
+            - RESOLUTION=480
+            - FPS=4
+    sr-red-nunchuck-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/18GYuw04z2ozUUqzOaG8pPkZbCME4ghaq/view?usp=share_link
+            - SPLITS=5^33
+            - INPUT_FILE=Sr. Red Nunchuck.mp4
+            - OUTPUT_FILE=SeniorRedNunchuck
+            - RESOLUTION=640
+            - FPS=10
+    sr-red-nunchuck-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/18GYuw04z2ozUUqzOaG8pPkZbCME4ghaq/view?usp=share_link
+            - SPLITS=5^33
+            - INPUT_FILE=Sr. Red Nunchuck.mp4
+            - OUTPUT_FILE=SeniorRedNunchuck
+            - RESOLUTION=480
+            - FPS=4

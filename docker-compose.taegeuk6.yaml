@@ -1,0 +1,152 @@
+version: "3.9"
+
+x-app: &default-app
+    image: spuder/gifr:latest
+    volumes:
+        - ./input:/input
+        - ./output:/output
+
+services:
+    taegeuk6-parts-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=jcBwWo4wN7c
+            - SPLITS=5:43^5:53,6:52^7:15,8:41^8:56,10:21.5^10:34
+            - INPUT_FILE=Taegeuk6Jang.mp4
+            - OUTPUT_FILE=Taegeuk6Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk6-parts-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=jcBwWo4wN7c
+            - SPLITS=5:43^5:53,6:52^7:15,8:41^8:56,10:21.5^10:34
+            - INPUT_FILE=Taegeuk6Jang.mp4
+            - OUTPUT_FILE=Taegeuk6Jang
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk6-complete-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=jcBwWo4wN7c
+            - SPLITS=1:01^1:55
+            - INPUT_FILE=Taegeuk6Jang.mp4
+            - OUTPUT_FILE=Taegeuk6Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk6-complete-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=jcBwWo4wN7c
+            - SPLITS=1:01^1:55
+            - INPUT_FILE=Taegeuk6Jang.mp4
+            - OUTPUT_FILE=Taegeuk6Jang
+            - RESOLUTION=480
+            - FPS=4
+    sr-brown-form-complete-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ADokCTX3pFR6j40&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215443&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/w22oLPX72LU
+            - SPLITS=9^54
+            - INPUT_FILE=Sr. Brown Form.mp4
+            - OUTPUT_FILE=SeniorBrownForm
+            - RESOLUTION=640
+            - FPS=10
+    sr-brown-form-complete-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ADokCTX3pFR6j40&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215443&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/w22oLPX72LU
+            - SPLITS=9^54
+            - INPUT_FILE=Sr. Brown Form.mp4
+            - OUTPUT_FILE=SeniorBrownForm
+            - RESOLUTION=480
+            - FPS=4
+    sr-brown-form-parts-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ADokCTX3pFR6j40&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215443&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/w22oLPX72LU
+            - SPLITS=9^22,21^35,34^46,45^54
+            - INPUT_FILE=Sr. Brown Form.mp4
+            - OUTPUT_FILE=SeniorBrownForm
+            - RESOLUTION=640
+            - FPS=10
+    sr-brown-form-parts-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ADokCTX3pFR6j40&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215443&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/w22oLPX72LU
+            - SPLITS=9^22,21^35,34^46,45^54
+            - INPUT_FILE=Sr. Brown Form.mp4
+            - OUTPUT_FILE=SeniorBrownForm
+            - RESOLUTION=480
+            - FPS=4
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
+            - SPLITS=07^51
+            - INPUT_FILE=Sr. Brown Form.mp4
+            - OUTPUT_FILE=SeniorBrownForm
+            - RESOLUTION=480
+            - FPS=4
+    sr-brown-sparring-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AP7g3u1tMVRrAVc&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215444&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/sNw9W9uTEyA
+            - SPLITS=10^16,23^30
+            - INPUT_FILE=Sr. Brown One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorBrownSparring
+            - RESOLUTION=640
+            - FPS=10
+    sr-brown-sparring-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AP7g3u1tMVRrAVc&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215444&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/sNw9W9uTEyA
+            - SPLITS=10^16,23^30
+            - INPUT_FILE=Sr. Brown One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorBrownSparring
+            - RESOLUTION=480
+            - FPS=4
+    sr-brown-kicking-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ALpyDHg5iO5n%2DcI&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215442&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/3k6EhoxAzww
+            - SPLITS=8^12,16^22
+            - INPUT_FILE=Sr. Brown Belt Kicking.mp4
+            - OUTPUT_FILE=SeniorBrownKicking
+            - RESOLUTION=640
+            - FPS=10
+    sr-brown-kicking-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ALpyDHg5iO5n%2DcI&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215442&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/3k6EhoxAzww
+            - SPLITS=8^12,16^22
+            - INPUT_FILE=Sr. Brown Belt Kicking.mp4
+            - OUTPUT_FILE=SeniorBrownKicking
+            - RESOLUTION=480
+            - FPS=4
+    sr-brown-nunchuck-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/1Syk72AmYfsChQVvvZ7yPXkkQUmSL6tRd/view?usp=share_link
+            - SPLITS=8^27
+            - INPUT_FILE=Sr. Brown Nunchukas.mp4
+            - OUTPUT_FILE=SeniorBrownNunchuck
+            - RESOLUTION=640
+            - FPS=10
+    sr-brown-nunchuck-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/1Syk72AmYfsChQVvvZ7yPXkkQUmSL6tRd/view?usp=share_link
+            - SPLITS=8^27
+            - INPUT_FILE=Sr. Brown Nunchukas.mp4
+            - OUTPUT_FILE=SeniorBrownNunchuck
+            - RESOLUTION=480
+            - FPS=4

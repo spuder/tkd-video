@@ -7,91 +7,407 @@ x-app: &default-app
         - ./output:/output
 
 services:
-    taegeuk7-complete:
+    taegeuk7-complete-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-complete.env
-    taegeuk7-parts:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=1:08^2:02
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-complete-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-parts.env
-    taegeuk7-SonalGeodeureoArae:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=1:08^2:02
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-parts-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-SonalGeodeureoArae.env
-    taegeuk7-GeodeureoBatangson1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=12:41.30^12:52,14:27.30^14:42,18:04^18:19,20:46.30^20:57
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-parts-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-GeodeureoBatangson1.env
-    taegeuk7-GeodeureoBatangson2:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=12:41.30^12:52,14:27.30^14:42,18:04^18:19,20:46.30^20:57
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-SonalGeodeureoArae-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-GeodeureoBatangson2.env
-    taegeuk7-Bojumeok1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=2:57.20^3:00
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-SonalGeodeureoArae
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-SonalGeodeureoArae-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Bojumeok1.env
-    taegeuk7-Gawimakgi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=2:57.20^3:00
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-SonalGeodeureoArae
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-GeodeureoBatangson1-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Gawimakgi1.env
-    taegeuk7-Mureupchigi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=3:54^3:57
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang-GeodeureoBatangson1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-GeodeureoBatangson1-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Mureupchigi1.env
-    taegeuk7-Mureupchigi2:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=3:54^3:57
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang-GeodeureoBatangson1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-GeodeureoBatangson2-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Mureupchigi2.env
-    taegeuk7-Hecheomakgi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=4:00.10^4:03.35
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang-GeodeureoBatangson2
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-GeodeureoBatangson2-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Hecheomakgi1.env
-    taegeuk7-DujumeokJeocheoJireugi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=4:00.10^4:03.35
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7Jang-GeodeureoBatangson2
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Bojumeok1-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-DujumeokJeocheoJireugi1.env
-    taegeuk7-DujumeokJeocheoJireugi2:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=4:48^4:51
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Bojumeok1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Bojumeok1-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-DujumeokJeocheoJireugi2.env
-    taegeuk7-UtgeoreoArae1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=4:48^4:51
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Bojumeok1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Gawimakgi1-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-UtgeoreoArae1.env
-    taegeuk7-DeungjumeokBakkanchigi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=5:31.35^5:34
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Gawimakgi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Gawimakgi1-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-DeungjumeokBakkanchigi1.env
-    taegeuk7-Pyojeokchagi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=5:31.35^5:34
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Gawimakgi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Mureupchigi1-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Pyojeokchagi1.env
-    taegeuk7-Pyojeokchagi2:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=5:59.35^6:02.50
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Mureupchigi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Mureupchigi1-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Pyojeokchagi2.env
-    taegeuk7-Yeopjieugi1:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=5:59.35^6:02.50
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Mureupchigi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Mureupchigi2-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Yeopjieugi1.env
-    taegeuk7-Yeopjieugi2:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:05.30^6:07
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Mureupchigi2
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Mureupchigi2-480:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-red/Taegeuk7Jang-Yeopjieugi2.env
-    jr-red-form-complete:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:05.30^6:07
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Mureupchigi2
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Hecheomakgi1-640:
         <<: *default-app
-        env_file:
-        - taegeuk/jr-red/JuniorRedForm-complete.env
-    # jr-red-sparring:
-    #     <<: *default-app
-    #     env_file:
-    #     - taegeuk/jr-red/JuniorRedSparring.env
-    jr-red-kicking:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:15^6:18
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Hecheomakgi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Hecheomakgi1-480:
         <<: *default-app
-        env_file:
-        - taegeuk/jr-red/JuniorRedKicking.env
-    # jr-red-nunchuck:
-    #     <<: *default-app
-    #     env_file:
-    #     - taegeuk/jr-red/JuniorRedNunchuckas.env
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:15^6:18
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Hecheomakgi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-DujumeokJeocheoJireugi1-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:40.35^6:44
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-DujumeokJeocheoJireugi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-DujumeokJeocheoJireugi1-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:40.35^6:44
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-DujumeokJeocheoJireugi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-DujumeokJeocheoJireugi2-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:56^7:00
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-DujumeokJeocheoJireugi2
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-DujumeokJeocheoJireugi2-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=6:56^7:00
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-DujumeokJeocheoJireugi2
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-UtgeoreoArae1-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=7:35.20^7:39
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-UtgeoreoArae1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-UtgeoreoArae1-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=7:35.20^7:39
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-UtgeoreoArae1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-DeungjumeokBakkanchigi1-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=8:09.20^8:11.22
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-DeungjumeokBakkanchigi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-DeungjumeokBakkanchigi1-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=8:09.20^8:11.22
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-DeungjumeokBakkanchigi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Pyojeokchagi1-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=8:44.24^8:46.30
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Pyojeokchagi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Pyojeokchagi1-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=8:44.24^8:46.30
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Pyojeokchagi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Pyojeokchagi2-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=8:48^8:52
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Pyojeokchagi2
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Pyojeokchagi2-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=8:48^8:52
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Pyojeokchagi2
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Yeopjieugi1-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=9:05^9:10
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Yeopjieugi1
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Yeopjieugi1-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=9:05^9:10
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Yeopjieugi1
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk7-Yeopjieugi2-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=9:11.20^9:14.15
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Yeopjieugi2
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk7-Yeopjieugi2-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=6FUM1p6qqhQ
+            - SPLITS=9:11.20^9:14.15
+            - INPUT_FILE=Taegeuk7Jang.mp4
+            - OUTPUT_FILE=Taegeuk7-Yeopjieugi2
+            - RESOLUTION=480
+            - FPS=4
+    jr-red-form-complete-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ADUrYWZ7qVkPlu0&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215445&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/4-fgJS02mAM
+            - SPLITS=0:08^1:04
+            - INPUT_FILE=Jr. Red Form.mp4
+            - OUTPUT_FILE=JuniorRedForm
+            - RESOLUTION=640
+            - FPS=10 #TODO: should this be 16? 
+    jr-red-form-complete-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ADUrYWZ7qVkPlu0&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215445&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/4-fgJS02mAM
+            - SPLITS=0:08^1:04
+            - INPUT_FILE=Jr. Red Form.mp4
+            - OUTPUT_FILE=JuniorRedForm
+            - RESOLUTION=480
+            - FPS=4
+    jr-red-sparring-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJRCZUeAcztBpXM&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215447&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/FyYa-XKJwIQ
+            - SPLITS=12^19,25^32
+            - INPUT_FILE=Jr. Red One Step Sparring.mp4
+            - OUTPUT_FILE=JuniorRedSparring
+            - RESOLUTION=640
+            - FPS=10
+    jr-red-sparring-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJRCZUeAcztBpXM&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215447&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/FyYa-XKJwIQ
+            - SPLITS=12^19,25^32
+            - INPUT_FILE=Jr. Red One Step Sparring.mp4
+            - OUTPUT_FILE=JuniorRedSparring
+            - RESOLUTION=480
+            - FPS=4
+    jr-red-kicking-640:
+        <<: *default-app
+        environment:
+             # https://onedrive.live.com/?authkey=%21AF5rRuGm5viQW%2Dc&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215446&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/WB2YnlfIw8k
+            - SPLITS=6^12,14^22
+            - INPUT_FILE=Jr. Red Kicking Technique.mp4
+            - OUTPUT_FILE=JuniorRedKicking
+            - RESOLUTION=640
+            - FPS=10
+    jr-red-kicking-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AF5rRuGm5viQW%2Dc&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215446&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/WB2YnlfIw8k
+            - SPLITS=6^12,14^22
+            - INPUT_FILE=Jr. Red Kicking Technique.mp4
+            - OUTPUT_FILE=JuniorRedKicking
+            - RESOLUTION=480
+            - FPS=4
+    jr-red-nunchuck-640:
+        <<: *default-app
+        environment:
+            #https://drive.google.com/open?id=190HMb4rMFz9j6bbvQ7DQqMiWib-q7fQ7
+            - VIDEO_URL=https://youtu.be/WB2YnlfIw8k
+            - SPLITS=6^32
+            - INPUT_FILE=Jr. Red Nunchukas.mp4
+            - OUTPUT_FILE=JuniorRedNunchuckas
+            - RESOLUTION=640
+            - FPS=10
+    jr-red-nunchuck-480:
+        <<: *default-app
+        environment:
+            #https://drive.google.com/open?id=190HMb4rMFz9j6bbvQ7DQqMiWib-q7fQ7
+            - VIDEO_URL=https://youtu.be/WB2YnlfIw8k
+            - SPLITS=6^32
+            - INPUT_FILE=Jr. Red Nunchukas.mp4
+            - OUTPUT_FILE=JuniorRedNunchuckas
+            - RESOLUTION=480
+            - FPS=4

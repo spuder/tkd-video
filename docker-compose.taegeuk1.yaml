@@ -98,7 +98,7 @@ services:
             - INPUT_FILE=Jr. Green Nunchukas.mp4
             - OUTPUT_FILE=JuniorGreenNunchuck
             - RESOLUTION=640
-            - FSP=10
+            - FPS=10
     jr-green-nunchuck-480:
         <<: *default-app
         environment:
@@ -108,4 +108,4 @@ services:
             - INPUT_FILE=Jr. Green Nunchukas.mp4
             - OUTPUT_FILE=JuniorGreenNunchuck
             - RESOLUTION=480
-            - FSP=8
+            - FPS=4

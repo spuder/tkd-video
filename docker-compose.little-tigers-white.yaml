@@ -16,7 +16,7 @@ services:
       - INPUT_FILE=LT WY Form.mp4
       - OUTPUT_FILE=LittleTigerWhiteForm
       - RESOLUTION=640
-      - FPS=16
+      - FPS=10
 
   form-480:
     <<: *default-app
@@ -26,7 +26,7 @@ services:
       - INPUT_FILE=LT WY Form.mp4
       - OUTPUT_FILE=LittleTigerWhiteForm
       - RESOLUTION=480
-      - FPS=8
+      - FPS=4
 
   handtechnique-640:
     <<: *default-app
@@ -36,7 +36,7 @@ services:
       - INPUT_FILE=LT WY HandTechnique.mp4
       - OUTPUT_FILE=LittleTigerWhiteHandTechnique
       - RESOLUTION=640
-      - FPS=16
+      - FPS=10
 
   handtechnique-480:
     <<: *default-app
@@ -46,7 +46,7 @@ services:
       - INPUT_FILE=LT WY HandTechnique.mp4
       - OUTPUT_FILE=LittleTigerWhiteHandTechnique
       - RESOLUTION=480
-      - FPS=8
+      - FPS=4
 
   kicks-640:
     <<: *default-app
@@ -56,7 +56,7 @@ services:
       - INPUT_FILE=LT WY Kicks.mp4
       - OUTPUT_FILE=LittleTigerWhiteKicks
       - RESOLUTION=640
-      - FPS=16
+      - FPS=10
 
   kicks-480:
     <<: *default-app
@@ -66,4 +66,4 @@ services:
       - INPUT_FILE=LT WY Kicks.mp4
       - OUTPUT_FILE=LittleTigerWhiteKicks
       - RESOLUTION=480
-      - FPS=8
+      - FPS=4

@@ -95,7 +95,7 @@ services:
             - INPUT_FILE=Jr. Blue Nunchukas.mp4
             - OUTPUT_FILE=JuniorBlueNunchuck
             - RESOLUTION=640
-            - FSP=10
+            - FPS=10
     jr-blue-nunchuck-480:
         <<: *default-app
         environment:
@@ -104,4 +104,4 @@ services:
             - INPUT_FILE=Jr. Blue Nunchukas.mp4
             - OUTPUT_FILE=JuniorBlueNunchuck
             - RESOLUTION=480
-            - FSP=8
+            - FPS=4

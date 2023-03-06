@@ -117,7 +117,7 @@ services:
             - INPUT_FILE=Sr. Green Nunchukas.mp4
             - OUTPUT_FILE=SeniorGreenNunchuck
             - RESOLUTION=640
-            - FSP=10
+            - FPS=10
     sr-green-nunchuck-480:
         <<: *default-app
         environment:
@@ -127,4 +127,4 @@ services:
             - INPUT_FILE=Sr. Green Nunchukas.mp4
             - OUTPUT_FILE=SeniorGreenNunchuck
             - RESOLUTION=480
-            - FSP=8
+            - FPS=4

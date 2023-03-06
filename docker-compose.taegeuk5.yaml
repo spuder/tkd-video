@@ -1,0 +1,152 @@
+version: "3.9"
+
+x-app: &default-app
+    image: spuder/gifr:latest
+    volumes:
+        - ./input:/input
+        - ./output:/output
+
+services:
+    taegeuk5-parts-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=VdqNEAHWCBM
+            - SPLITS=5:45^5:55,7:00^7:18,8:33^8:55,9:54^10:18
+            - INPUT_FILE=Taegeuk5Jang.mp4
+            - OUTPUT_FILE=Taegeuk5Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk5-parts-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=VdqNEAHWCBM
+            - SPLITS=5:45^5:55,7:00^7:18,8:33^8:55,9:54^10:18
+            - INPUT_FILE=Taegeuk5Jang.mp4
+            - OUTPUT_FILE=Taegeuk5Jang
+            - RESOLUTION=480
+            - FPS=4
+    taegeuk5-complete-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=VdqNEAHWCBM
+            - SPLITS=1:20^2:05
+            - INPUT_FILE=Taegeuk5Jang.mp4
+            - OUTPUT_FILE=Taegeuk5Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk5-complete-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=VdqNEAHWCBM
+            - SPLITS=1:20^2:05
+            - INPUT_FILE=Taegeuk5Jang.mp4
+            - OUTPUT_FILE=Taegeuk5Jang
+            - RESOLUTION=480
+            - FPS=4
+    jr-brown-form-complete-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
+            - SPLITS=07^51
+            - INPUT_FILE=Jr. Brown Form.mp4
+            - OUTPUT_FILE=JuniorBrownForm
+            - RESOLUTION=640
+            - FPS=10
+    jr-brown-form-complete-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
+            - SPLITS=07^51
+            - INPUT_FILE=Jr. Brown Form.mp4
+            - OUTPUT_FILE=JuniorBrownForm
+            - RESOLUTION=480
+            - FPS=4
+    jr-brown-form-parts-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
+            - SPLITS=07^14,14^23,23^38,38^51
+            - INPUT_FILE=Jr. Brown Form.mp4
+            - OUTPUT_FILE=JuniorBrownForm
+            - RESOLUTION=640
+            - FPS=10
+    jr-brown-form-parts-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
+            - SPLITS=07^14,14^23,23^38,38^51
+            - INPUT_FILE=Jr. Brown Form.mp4
+            - OUTPUT_FILE=JuniorBrownForm
+            - RESOLUTION=480
+            - FPS=4
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
+            - SPLITS=07^51
+            - INPUT_FILE=Jr. Brown Form.mp4
+            - OUTPUT_FILE=JuniorBrownForm
+            - RESOLUTION=480
+            - FPS=4
+    jr-brown-sparring-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AML2OLo9ZC4zxIs&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215441&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/rAikmVUe4Oc
+            - SPLITS=12^19,25^32
+            - INPUT_FILE=Jr. Brown One Step Sparring.mp4
+            - OUTPUT_FILE=JuniorBrownsparring
+            - RESOLUTION=640
+            - FPS=10
+    jr-brown-sparring-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AML2OLo9ZC4zxIs&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215441&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/rAikmVUe4Oc
+            - SPLITS=12^19,25^32
+            - INPUT_FILE=Jr. Brown One Step Sparring.mp4
+            - OUTPUT_FILE=JuniorBrownsparring
+            - RESOLUTION=480
+            - FPS=4
+    jr-brown-kicking-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AKIjIdvd1bnwicY&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215440&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/rgHcJOe8L0Y
+            - SPLITS=6^14,15^21
+            - INPUT_FILE=Jr. Brown Kicking.mp4
+            - OUTPUT_FILE=JuniorBrownKicking
+            - RESOLUTION=640
+            - FPS=10
+    jr-brown-kicking-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AKIjIdvd1bnwicY&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215440&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/rgHcJOe8L0Y
+            - SPLITS=6^14,15^21
+            - INPUT_FILE=Jr. Brown Kicking.mp4
+            - OUTPUT_FILE=JuniorBrownKicking
+            - RESOLUTION=480
+            - FPS=4
+    jr-brown-nunchuck-640:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/1pM-QBB4kC3VmPdjeUDq05CMVHDXZWSdZ/view?usp=share_link
+            - SPLITS=6^25
+            - INPUT_FILE=Jr. Brown Nunchukas.mp4
+            - OUTPUT_FILE=JuniorBrownNunchuck
+            - RESOLUTION=640
+            - FPS=10
+    jr-brown-nunchuck-480:
+        <<: *default-app
+        environment:
+            - VIDEO_URL=https://drive.google.com/file/d/1pM-QBB4kC3VmPdjeUDq05CMVHDXZWSdZ/view?usp=share_link
+            - SPLITS=6^25
+            - INPUT_FILE=Jr. Brown Nunchukas.mp4
+            - OUTPUT_FILE=JuniorBrownNunchuck
+            - RESOLUTION=480
+            - FPS=4
