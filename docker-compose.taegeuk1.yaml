@@ -11,23 +11,101 @@ services:
     #     <<: *default-app
     #     env_file:
     #         - taegeuk/jr-green/Taegeuk1Jang-Parts.env
-    taegeuk1-complete:
+    taegeuk1-complete-640:
         <<: *default-app
-        env_file:
-            - taegeuk/jr-green/Taegeuk1Jang-complete.env
-    jr-green-form-complete:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=WhkjRruCBTo
+            - SPLITS=1:28^2:00
+            - INPUT_FILE=Taegeuk1Jang.mp4
+            - OUTPUT_FILE=Taegeuk1Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk1-complete-480:
         <<: *default-app
-        env_file:
-        - taegeuk/jr-green/JuniorGreenForm-complete.env
-    jr-green-sparring:
+        environment:
+            - VIDEO_URL=https://www.youtube.com/watch?v=WhkjRruCBTo
+            - SPLITS=1:28^2:00
+            - INPUT_FILE=Taegeuk1Jang.mp4
+            - OUTPUT_FILE=Taegeuk1Jang
+            - RESOLUTION=480
+            - FPS=4
+    jr-green-form-complete-640:
         <<: *default-app
-        env_file:
-        - taegeuk/jr-green/JuniorGreenSparring.env
-    jr-green-kicking:
+        environment:
+            # https://onedrive.live.com/?authkey=%21ALQhUXj80QgtVcQ&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215427&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/raRH23MbW0g
+            - SPLITS=11^50
+            - INPUT_FILE=Jr. Green Form.mp4
+            - OUTPUT_FILE=JuniorGreenForm
+            - RESOLUTION=640
+            - FPS=10
+    jr-green-form-complete-480:
         <<: *default-app
-        env_file:
-        - taegeuk/jr-green/JuniorGreenKicking.env
-    jr-green-nunchuck:
+        environment:
+            # https://onedrive.live.com/?authkey=%21ALQhUXj80QgtVcQ&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215427&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/raRH23MbW0g
+            - SPLITS=11^50
+            - INPUT_FILE=Jr. Green Form.mp4
+            - OUTPUT_FILE=JuniorGreenForm
+            - RESOLUTION=480
+            - FPS=4
+    jr-green-sparring-640:
         <<: *default-app
-        env_file:
-        - taegeuk/jr-green/JuniorGreenNunchuck.env
+        environment:
+            # https://onedrive.live.com/?authkey=%21AA9Os%5FjWYVHuAis&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215429&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/OWGJgFJk7XI
+            - SPLITS=14^19,27^33
+            - INPUT_FILE=Jr. Green One Step Sparring.mp4
+            - OUTPUT_FILE=JuniorGreenSparring
+            - RESOLUTION=640
+            - FPS=10
+    jr-green-sparring-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AA9Os%5FjWYVHuAis&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215429&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/OWGJgFJk7XI
+            - SPLITS=14^19,27^33
+            - INPUT_FILE=Jr. Green One Step Sparring.mp4
+            - OUTPUT_FILE=JuniorGreenSparring
+            - RESOLUTION=480
+            - FPS=4
+    jr-green-kicking-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ALzR30WG0aDIaoo&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215428&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/diD5e2BJCa0
+            - SPLITS=6^12,16^22
+            - INPUT_FILE=Jr. Green Kicking.mp4
+            - OUTPUT_FILE=JuniorGreenKicking
+            - RESOLUTION=640
+            - FPS=10
+    jr-green-kicking-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21ALzR30WG0aDIaoo&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215428&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/diD5e2BJCa0
+            - SPLITS=6^12,16^22
+            - INPUT_FILE=Jr. Green Kicking.mp4
+            - OUTPUT_FILE=JuniorGreenKicking
+            - RESOLUTION=480
+            - FPS=4
+    jr-green-nunchuck-640:
+        <<: *default-app
+        environment:
+            # https://drive.google.com/file/d/15AlA8QvG59ZuF2d5Orv_AImIYGW-wWG3/view
+            - VIDEO_URL=https://youtu.be/YrUJRwA9UIo
+            - SPLITS=7^28
+            - INPUT_FILE=Jr. Green Nunchukas.mp4
+            - OUTPUT_FILE=JuniorGreenNunchuck
+            - RESOLUTION=640
+            - FSP=10
+    jr-green-nunchuck-480:
+        <<: *default-app
+        environment:
+            # https://drive.google.com/file/d/15AlA8QvG59ZuF2d5Orv_AImIYGW-wWG3/view
+            - VIDEO_URL=https://youtu.be/YrUJRwA9UIo
+            - SPLITS=7^28
+            - INPUT_FILE=Jr. Green Nunchukas.mp4
+            - OUTPUT_FILE=JuniorGreenNunchuck
+            - RESOLUTION=480
+            - FSP=8

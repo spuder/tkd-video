@@ -10,24 +10,102 @@ services:
     # taegeuk2-parts:
     #     <<: *default-app
     #     env_file:
-    #         - taegeuk/sr-green//Taegeuk2Jang-Parts.env
-    taegeuk2-complete:
+    #         - taegeuk/sr-green/taegeuk2Jang-Parts.env
+    taegeuk2-complete-640:
         <<: *default-app
-        env_file:
-            - taegeuk/sr-green//Taegeuk2Jang-complete.env
-    taegeuk/sr-green/-form-complete:
+        environment:
+            - VIDEO_URL=https://youtu.be/tGlrUplKHh8
+            - SPLITS=1:15^1:52
+            - INPUT_FILE=Taegeuk2Jang.mp4
+            - OUTPUT_FILE=Taegeuk2Jang
+            - RESOLUTION=640
+            - FPS=10
+    taegeuk2-complete-480:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-green//SeniorGreenForm-complete.env
-    taegeuk/sr-green/-sparring:
+        environment:
+            - VIDEO_URL=https://youtu.be/tGlrUplKHh8
+            - SPLITS=1:15^1:52
+            - INPUT_FILE=Taegeuk2Jang.mp4
+            - OUTPUT_FILE=Taegeuk2Jang
+            - RESOLUTION=480
+            - FPS=4
+    sr-green-form-complete-640:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-green//SeniorGreenSparring.env
-    taegeuk/sr-green/-kicking:
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJ6nGhDlNj2Ghhk&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215430&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/pj0yZA4jHbo
+            - SPLITS=8^45
+            - INPUT_FILE=Sr. Green Form.mp4
+            - OUTPUT_FILE=SeniorGreenForm
+            - RESOLUTION=640
+            - FPS=10
+    sr-green-form-complete-480:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-green//SeniorGreenKicking.env
-    taegeuk/sr-green/-nunchuck:
+        environment:
+            # https://onedrive.live.com/?authkey=%21AJ6nGhDlNj2Ghhk&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215430&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/pj0yZA4jHbo
+            - SPLITS=8^45
+            - INPUT_FILE=Sr. Green Form.mp4
+            - OUTPUT_FILE=SeniorGreenForm
+            - RESOLUTION=480
+            - FPS=4
+    sr-green-sparring-640:
         <<: *default-app
-        env_file:
-        - taegeuk/sr-green//SeniorGreenNunchuck.env
+        environment:
+            # https://onedrive.live.com/?authkey=%21AL1OxZzmAkouf70&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215432&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/3saxbyvxpps
+            - SPLITS=9^15,22^28
+            - INPUT_FILE=Sr. Green One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorGreenSparring
+            - RESOLUTION=640
+            - FPS=10
+    sr-green-sparring-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AL1OxZzmAkouf70&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215432&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/3saxbyvxpps
+            - SPLITS=9^15,22^28
+            - INPUT_FILE=Sr. Green One Step Sparring.mp4
+            - OUTPUT_FILE=SeniorGreenSparring
+            - RESOLUTION=480
+            - FPS=4
+    sr-green-kicking-640:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAC0HIjkUnrSLvs&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215431&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/hfak132V_FU
+            - SPLITS=7^12,17^22
+            - INPUT_FILE=Sr. Green Kicking.mp4
+            - OUTPUT_FILE=SeniorrGreenKicking
+            - RESOLUTION=640
+            - FPS=10
+    sr-green-kicking-480:
+        <<: *default-app
+        environment:
+            # https://onedrive.live.com/?authkey=%21AAC0HIjkUnrSLvs&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215431&parId=F8E1EC016F4B21B9%21478&o=OneUp
+            - VIDEO_URL=https://youtu.be/hfak132V_FU
+            - SPLITS=7^12,17^22
+            - INPUT_FILE=Sr. Green Kicking.mp4
+            - OUTPUT_FILE=SeniorrGreenKicking
+            - RESOLUTION=480
+            - FPS=4
+    sr-green-nunchuck-640:
+        <<: *default-app
+        environment:
+            # https://drive.google.com/file/d/1FYbVK162s42-znznzYnnn-ZIcnUzjEqS/view?usp=sharing
+            - VIDEO_URL=https://youtu.be/0vbWzo93PTk
+            - SPLITS=6^20
+            - INPUT_FILE=Sr. Green Nunchukas.mp4
+            - OUTPUT_FILE=SeniorGreenNunchuck
+            - RESOLUTION=640
+            - FSP=10
+    sr-green-nunchuck-480:
+        <<: *default-app
+        environment:
+            # https://drive.google.com/file/d/1FYbVK162s42-znznzYnnn-ZIcnUzjEqS/view?usp=sharing
+            - VIDEO_URL=https://youtu.be/0vbWzo93PTk
+            - SPLITS=6^20
+            - INPUT_FILE=Sr. Green Nunchukas.mp4
+            - OUTPUT_FILE=SeniorGreenNunchuck
+            - RESOLUTION=480
+            - FSP=8
