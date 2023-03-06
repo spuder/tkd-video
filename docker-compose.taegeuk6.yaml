@@ -83,15 +83,6 @@ services:
             - OUTPUT_FILE=SeniorBrownForm
             - RESOLUTION=480
             - FPS=4
-        <<: *default-app
-        environment:
-            # https://onedrive.live.com/?authkey=%21AAcRy6GjOzZHmb8&cid=F8E1EC016F4B21B9&id=F8E1EC016F4B21B9%215439&parId=F8E1EC016F4B21B9%21478&o=OneUp
-            - VIDEO_URL=https://youtu.be/kHHgpN8ZbtQ
-            - SPLITS=07^51
-            - INPUT_FILE=Sr. Brown Form.mp4
-            - OUTPUT_FILE=SeniorBrownForm
-            - RESOLUTION=480
-            - FPS=4
     sr-brown-sparring-640:
         <<: *default-app
         environment:
