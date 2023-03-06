@@ -56,6 +56,7 @@ make templates
 | JuniorBlueForm-part2 | ![](https://imgur.com/ZSn8fMf.gif)| 
 | JuniorBlueForm-part3 | ![](https://imgur.com/7AOnHI6.gif)| 
 | JuniorBlueForm-part4 | ![](https://imgur.com/SOhY068.gif)| 
+| JuniorBlueNunchuck | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTM4Nzk3YzIyY2M2N2VjZWEwMGNjOTZmOWJmZDg2MmU4NWQwZjk2OSZjdD1n/wqrTwnsHudbRQILA0P/giphy-downsized-large.gif)| 
 
 # :blue_square: Senior Blue :blue_square:
 
@@ -82,6 +83,7 @@ make templates
 
 | Filename | Preview | 
 |---|---|
+| SeniorBrownNunchuck-640.gif | ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmFjZWNlMGMyMjA1Y2FhNzRhODUxMTExYzY3MGIzMDEwZmQ0OTRkOSZjdD1n/DAQaBbEokPFfdPXqGs/giphy-downsized-large.gif)| 
 
 
 # :red_circle: Junior Red :red_circle:
